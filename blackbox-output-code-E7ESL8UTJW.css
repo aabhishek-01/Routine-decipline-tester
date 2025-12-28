@@ -1,0 +1,156 @@
+/* Mobile-first responsive design */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background-color: white;
+    color: #007bff;
+}
+
+main {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ad-placeholder {
+    background-color: #ddd;
+    height: 90px;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 90px;
+    color: #666;
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+.test-btn, #submit-test {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.test-btn:hover, #submit-test:hover {
+    background-color: #218838;
+}
+
+.tracker {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.tasks {
+    margin-bottom: 1rem;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.task input {
+    margin-right: 0.5rem;
+}
+
+.progress-bar {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    height: 20px;
+    margin: 0.5rem 0;
+}
+
+.progress-fill {
+    background-color: #007bff;
+    height: 100%;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.motivation {
+    font-style: italic;
+    color: #dc3545;
+    margin: 1rem 0;
+}
+
+#share-btn {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#share-btn:hover {
+    background-color: #138496;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    nav button {
+        display: inline-block;
+    }
+    
+    .test-btn {
+        width: auto;
+        display: inline-block;
+        margin: 0.5rem;
+    }
+    
+    .tracker {
+        display: inline-block;
+        width: calc(50% - 1rem);
+        margin: 0.5rem;
+        vertical-align: top;
+    }
+}

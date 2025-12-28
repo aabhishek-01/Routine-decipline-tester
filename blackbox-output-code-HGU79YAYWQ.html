@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reality Check + Discipline Tracker</title>
+    <meta name="description" content="Test your discipline with reality checks and track your habits. Prove you're disciplined.">
+    <meta name="keywords" content="discipline tracker, reality check, habit tracker, productivity">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- AdSense Placeholder -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Reality Check + Discipline Tracker</h1>
+        <p>अगर लगता है कि आप disciplined हैं, तो proof दीजिए।</p>
+        <nav>
+            <button id="nav-tests">Reality Checks</button>
+            <button id="nav-trackers">Trackers</button>
+            <button id="nav-dashboard">Dashboard</button>
+        </nav>
+    </header>
+    <main>
+        <!-- AdSense Banner Placeholder -->
+        <div id="ad-banner" class="ad-placeholder">
+            <!-- AdSense code here -->
+        </div>
+        
+        <section id="tests" class="active">
+            <h2>Reality Check Tests</h2>
+            <div id="test-list">
+                <button class="test-btn" data-test="discipline">Discipline Consistency Test</button>
+                <button class="test-btn" data-test="study">Study Focus Test</button>
+                <button class="test-btn" data-test="workout">Workout Discipline Test</button>
+                <button class="test-btn" data-test="phone">Phone Usage Test</button>
+                <button class="test-btn" data-test="routine">Daily Routine Test</button>
+            </div>
+            <div id="test-container" style="display:none;">
+                <h3 id="test-title"></h3>
+                <div id="questions"></div>
+                <button id="submit-test">Submit</button>
+                <div id="result" style="display:none;">
+                    <p id="score"></p>
+                    <p id="message"></p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="trackers">
+            <h2>Habit & Routine Trackers</h2>
+            <div id="tracker-list">
+                <div class="tracker" data-tracker="study">
+                    <h3>Study Routine Tracker</h3>
+                    <div class="tasks"></div>
+                    <p class="progress">Completion: <span class="percent">0%</span></p>
+                    <p class="streak">Streak: <span class="streak-count">0</span> days</p>
+                </div>
+                <div class="tracker" data-tracker="gym">
+                    <h3>Gym / Workout Tracker</h3>
+                    <div class="tasks"></div>
+                    <p class="progress">Completion: <span class="percent">0%</span></p>
+                    <p class="streak">Streak: <span class="streak-count">0</span> days</p>
+                </div>
+                <div class="tracker" data-tracker="phone">
+                    <h3>Phone Usage Control Tracker</h3>
+                    <div class="tasks"></div>
+                    <p class="progress">Completion: <span class="percent">0%</span></p>
+                    <p class="streak">Streak: <span class="streak-count">0</span> days</p>
+                </div>
+                <div class="tracker" data-tracker="goals">
+                    <h3>Daily Goals Tracker</h3>
+                    <div class="tasks"></div>
+                    <p class="progress">Completion: <span class="percent">0%</span></p>
+                    <p class="streak">Streak: <span class="streak-count">0</span> days</p>
+                </div>
+                <div class="tracker" data-tracker="habits">
+                    <h3>Habits Tracker</h3>
+                    <div class="tasks"></div>
+                    <p class="progress">Completion: <span class="percent">0%</span></p>
+                    <p class="streak">Streak: <span class="streak-count">0</span> days</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div id="overall-progress">
+                <h3>Overall Discipline Score</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="overall-score-bar"></div>
+                </div>
+                <p id="overall-score-text">0%</p>
+            </div>
+            <div id="test-scores">
+                <h3>Test Scores</h3>
+                <ul id="scores-list"></ul>
+            </div>
+            <div id="tracker-progress">
+                <h3>Tracker Completions</h3>
+                <ul id="progress-list"></ul>
+            </div>
+            <p class="motivation">You can do better. Keep pushing!</p>
+            <button id="share-btn">Share Your Progress</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Reality Check Tracker. Built for self-improvement.</p>
+    </footer>
+</body>
+</html>
